@@ -210,10 +210,11 @@ class Hero extends Component {
     const videoClass = (module.background_video != undefined ? 'hasVideo' : '');
     // const fullBleed = (img != undefined ? '' : 'fullBleed');
     const fullBleed = (module.full_bleed != null ? module.full_bleed : '');
+    const fullBleedClass = (module.full_bleed != null ? 'fullBleed' : '');
     console.log({fullBleed});
     
     return(
-      <HeroWrapper style={bgColor} alignment={alignment} className={`${videoClass} ${fullBleed}`} >
+      <HeroWrapper style={bgColor} alignment={alignment} className={`${videoClass} ${fullBleedClass}`} >
         <Row>
           <ContentWrapper className={`content hero-selector ${colorClass}`}>
             <H1>{heading}</H1>
@@ -235,7 +236,7 @@ class Hero extends Component {
             </div>
           ) : (
             <ImageWrapper className="image">
-              {bgVideo != null && fullBleed == 'false' ? (
+              {bgVideo && bgVideo != null && fullBleed == 'false' ? (
                 <video id="hero-video" className="hero hero--video" width="100%" poster="//cdn.shopify.com/s/files/1/0018/7904/8227/files/190531_Dorsa_Treaty_Calm_0041_1600x.jpg?v=1560527956" playsInline loop muted autoPlay>
                   <source src={bgVideo} type="video/mp4" />
 

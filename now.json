@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "name": "hudsonhemp",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "headers": {
+        "cache-control": "s-maxage=1000"
+      }
+    }
+  ]
+}

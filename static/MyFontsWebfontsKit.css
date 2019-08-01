@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3757230, 2019-05-07T15:41:21-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: TimesNRMTStd-BoldCond by Monotype 
+ * URL: https://www.myfonts.com/fonts/mti/times-new-roman/std-condensed-bold/
+ * Copyright: Copyright &#x00A9; 2015 The Monotype Corporation. All rights reserved.
+ * Licensed pageviews: 250,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3757230
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3954ae");
+
+  
+@font-face {font-family: 'TimesNRMTStd-BoldCond';src: url('/public/3954AE_0_0.eot');src: url('/public/3954AE_0_0.eot?#iefix') format('embedded-opentype'),url('/public/3954AE_0_0.woff2') format('woff2'),url('/public/3954AE_0_0.woff') format('woff'),url('/public/3954AE_0_0.ttf') format('truetype');}
+ 

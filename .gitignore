@@ -1,3 +1,10 @@
+.DS_Store
+.cache/
+public/
+node_modules/
+npm-debug.log
+
+
 # Logs
 logs
 *.log

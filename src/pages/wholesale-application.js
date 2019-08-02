@@ -107,7 +107,10 @@ const Dropdown = styled.select`
   border: none;
   border: solid 1px #0d140d;
   text-align: center;
-  padding: 10px 0 11px 0;
+  padding: 10px 0 11px 16px;
+  background-image: url('/down-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 `;
 export default ({data}) => {
 

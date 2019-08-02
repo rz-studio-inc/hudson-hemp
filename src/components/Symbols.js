@@ -10,6 +10,10 @@ const SVG = styled.svg`
 const Symbols = () => (
   <SVG>
     <defs>
+      <symbol id="icon-down-arrow" viewBox="0 0 11 32">
+        <title>down-arrow</title>
+        <path d="M6.027 1.609l-0.080 21.557 4.078 0.012-4.692 7.906-5.031-7.934 4.224 0.012 0.117-21.557z"></path>
+      </symbol>
       <symbol id="icon-HH_NY_LOGO" viewBox="0 0 411 32">
         <title>HH_NY_LOGO</title>
         <path d="M0.579 30.337v-29.157h3.579v11.481h16.702v-11.481h3.552v29.157h-3.552v-14.308h-16.702v14.308z" />

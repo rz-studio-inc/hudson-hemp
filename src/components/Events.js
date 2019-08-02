@@ -110,7 +110,7 @@ class Events extends Component {
                 <Copy>{item.event_address.text}</Copy>
                 {item.event_url && item.event_url.url && (
 
-                  <Links href={item.event_url.url} className={"site-link"}>
+                  <Links href={item.event_url.url} className={"site-link"} target={item.event_url.target}>
                     RSVP
                   </Links>
                 )}

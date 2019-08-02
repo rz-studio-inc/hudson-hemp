@@ -229,7 +229,7 @@ class Hero extends Component {
           </ContentWrapper>
           {bgVideo && bgVideo != null && fullBleed == 'true' ?  (
             <div className="video-wrapper">
-              <video id="hero-video" className="hero hero--video" width="100%" poster="//cdn.shopify.com/s/files/1/0018/7904/8227/files/190531_Dorsa_Treaty_Calm_0041_1600x.jpg?v=1560527956" playsInline loop muted autoPlay>
+              <video id="hero-video" className="hero hero--video" width="100%" playsInline loop muted autoPlay>
                 <source src={bgVideo} type="video/mp4" />
 
               </video>
@@ -237,7 +237,7 @@ class Hero extends Component {
           ) : (
             <ImageWrapper className="image">
               {bgVideo && bgVideo != null && fullBleed == 'false' ? (
-                <video id="hero-video" className="hero hero--video" width="100%" poster="//cdn.shopify.com/s/files/1/0018/7904/8227/files/190531_Dorsa_Treaty_Calm_0041_1600x.jpg?v=1560527956" playsInline loop muted autoPlay>
+                <video id="hero-video" className="hero hero--video" width="100%" playsInline loop muted autoPlay>
                   <source src={bgVideo} type="video/mp4" />
 
                 </video>

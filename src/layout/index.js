@@ -52,9 +52,11 @@ const Layout = ({ children }) => (
                 }
                 instagram_url {
                   url
+                  target
                 }
                 linkedin_url {
                   url
+                  target
                 }
                 resources {
                   resource_title {

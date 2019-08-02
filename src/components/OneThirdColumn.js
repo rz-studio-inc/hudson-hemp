@@ -81,7 +81,7 @@ class OneThirdColumn extends Component {
             <Italic>{item.subheading.text}</Italic>
             <Type>{item.description.text}</Type>
             {item.button_text && item.button_url && (
-              <Links href={item.button_url.url} className={"site-link"}>
+              <Links href={item.button_url.url} className={"site-link"} target={item.button_url.target}>
                 {item.button_text.text}
                 <svg className="icon icon-arrow">
                   <use xlinkHref="#icon-arrow" />

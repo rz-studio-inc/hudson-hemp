@@ -63,6 +63,7 @@ export const query = graphql`
                   event_url {
                     link_type
                     url
+                    target
                   }
                 }
               }
@@ -71,6 +72,7 @@ export const query = graphql`
                 slice_type
                 primary {
                   section_heading {text}
+                  section_description {text}
                 }
               }
               ... on PrismicPageTemplateBodyOneThirdColumn {
@@ -84,7 +86,10 @@ export const query = graphql`
                   subheading {text}
                   description {text}
                   button_text{text}
-                  button_url{url}
+                  button_url{
+                    url
+                    target
+                  }
                   
                 }
               }

@@ -161,6 +161,9 @@ const RightRail = styled.div`
     line-height: 1.5;
     font-style: italic;
   }
+  li {
+    list-style-type: disc;
+  }
   p {
     font-size: 21px;
     font-weight: normal;
@@ -170,4 +173,11 @@ const RightRail = styled.div`
     padding-bottom: 40px;
     color: #0d140d;
   }
+  a {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
 `;

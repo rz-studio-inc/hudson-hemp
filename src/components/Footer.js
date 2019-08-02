@@ -90,13 +90,13 @@ class Footer extends Component {
             <div>{data.contact_number.text}</div>
           </Contact>
           <Social>
-            <a href={data.linkedin_url.url}>
+            <a href={data.linkedin_url.url} target={data.linkedin_url.target}>
               LinkedIn
               <svg className="icon icon-arrow">
                 <use xlinkHref="#icon-arrow" />
               </svg>
             </a>
-            <a href={data.instagram_url.url}>
+            <a href={data.instagram_url.url} target={data.instagram_url.target}>
               Instagram
               <svg className="icon icon-arrow">
                 <use xlinkHref="#icon-arrow" />
@@ -104,7 +104,7 @@ class Footer extends Component {
             </a>
           </Social>
           <Legal>
-            <Link to="/terms-and-conditions/">Legal</Link>
+            <Link to="/legal/">Legal</Link>
             <div>© Hudson Hemp 2019</div>
           </Legal>
         </BottomRow>

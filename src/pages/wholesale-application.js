@@ -14,40 +14,37 @@ const Form = styled.form`
     content: "";
     display: inline-block;
     
-    height: 16px;
-    width: 16px;
+    height: 20px;
+    width: 20px;
     
     border: 1px solid;   
   }
   .check-wrapper label::after {
     content: "";
     display: inline-block;
-    height: 6px;
+    /* height: 6px;
     width: 9px;
     border-left: 2px solid;
     border-bottom: 2px solid;
     
-    transform: rotate(-45deg);
+    transform: rotate(-45deg); */
   }
   .check-wrapper label {
     position: relative;
     display: inline-block;
   }
-  /* .check-wrapper label::before,
-  .check-wrapper label::after {
-      position: absolute;
-  } */
+
   /*Outer-box*/
   .check-wrapper label::before {
     position: relative;
-    margin-right: 20px;
-    /* top: 3px; */
+    margin-right: 12px;
+    top: 4px;
   }
   /*Checkmark*/
   .check-wrapper label::after {
     position: absolute;
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     top: calc(50% - 9px);
     left: 2px;
     opacity: 0;
@@ -73,20 +70,22 @@ const Submit = styled.input `
   display: block;
   max-width: 560px;
   width: 100%;
-  max-height: 40px;
-  background: #f8f5f5;
+  background: #000;
+  color: #fff;
   -webkit-appearance: none;
   outline: none;
   border: none;
   border: solid 1px #0d140d;
   text-align: center;
-  padding: 10px 0 11px 0;
+  padding: 16px 0 16px 0;
   font-size: 21px;
   line-height: 1;
   min-width: 180px;
   margin-bottom: 12px;
+  
   font-family: 'Times New Roman';
   cursor: pointer;
+  margin-top: 20px;
   &:hover {
     background: #0d140d;
     color: #fff;

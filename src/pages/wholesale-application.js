@@ -7,6 +7,31 @@ const Form = styled.form`
   flex-direction: column;
 
 `;
+const Submit = styled.input `
+  display: block;
+  max-width: 560px;
+  width: 100%;
+  max-height: 40px;
+  background: #f8f5f5;
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  border: solid 1px #0d140d;
+  text-align: center;
+  padding: 10px 0 11px 0;
+  font-size: 21px;
+  line-height: 1;
+  min-width: 180px;
+  margin-bottom: 12px;
+  font-family: 'Times New Roman';
+  cursor: pointer;
+  &:hover {
+    background: #0d140d;
+    color: #fff;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+`;
 const Input = styled.input`
   display: block;
   max-width: 560px;
@@ -23,6 +48,13 @@ const Input = styled.input`
   line-height: 1;
   min-width: 180px;
   margin-bottom: 12px;
+  font-family: 'Times New Roman';
+  transition: background .3s ease-in-out;
+  &:focus {
+    background: #fff;
+    transition: background .3s ease-in-out;
+  }
+  
 `;
 const Label = styled.label`
   display: block;
@@ -32,9 +64,10 @@ const Label = styled.label`
 const RailWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  top: 70px;
+  top: 80px;
   position: relative;
   padding: 60px 40px 80px;
+  background: #f8f5f5;
 
 `;
 const Inner = styled.div`
@@ -55,9 +88,8 @@ const LeftRail = styled.div`
 `;
 const RightRail = styled.div`
   max-width: 50%;
-  /* margin-left: auto; */
-  */flex: 1 0 auto;
-  border-bottom: 1px solid #0d140d;
+  
+  flex: 1 0 auto;
   em {
     font-size: 32px;
     line-height: 1.5;
@@ -100,6 +132,7 @@ const H5s = styled(H5)`
 `;
 const Dropdown = styled.select`
   -webkit-appearance: none;
+  max-width: 560px;
   border: none;
     background: #f8f5f5;
   -webkit-appearance: none;
@@ -111,6 +144,8 @@ const Dropdown = styled.select`
   background-image: url('/down-arrow.svg');
   background-repeat: no-repeat;
   background-position: right 20px center;
+  font-size: 21px;
+  line-height: 1;
 `;
 export default ({data}) => {
 
@@ -131,49 +166,49 @@ export default ({data}) => {
             <H5s>Company Information</H5s>
             <Section>
 
-              <label for="company">Company Name</label><Input  id="company" maxlength="40" name="company" size="20" type="text" />
+              <label htmlFor="company">Company Name</label><Input  id="company" maxlength="40" name="company" size="20" type="text" />
 
-              <label for="URL">Company Website</label><Input  id="URL" maxlength="80" name="URL" size="20" type="text" />
+              <label htmlFor="URL">Company Website</label><Input  id="URL" maxlength="80" name="URL" size="20" type="text" />
 
-              <label for="phone">Phone</label><Input  id="phone" maxlength="40" name="phone" size="20" type="text" />
+              <label htmlFor="phone">Phone</label><Input  id="phone" maxlength="40" name="phone" size="20" type="text" />
             </Section>
 
             <H5s>Shipping Address</H5s>
             <Section className="row">
               <InputWrapper className="input-half">
-                <label for="street">Street</label><Input name="street"></Input>
+                <label htmlFor="street">Street</label><Input name="street"></Input>
               </InputWrapper>
               <InputWrapper className="input-half">
-                <label for="city">City</label><Input  id="city" maxlength="40" name="city" size="20" type="text" />
+                <label htmlFor="city">City</label><Input  id="city" maxlength="40" name="city" size="20" type="text" />
               </InputWrapper>
               <InputWrapper className="input-half">
-                <label for="state">State/Province</label><Input  id="state" maxlength="20" name="state" size="20" type="text" />
+                <label htmlFor="state">State/Province</label><Input  id="state" maxlength="20" name="state" size="20" type="text" />
               </InputWrapper>
               <InputWrapper className="input-half">
-                <label for="zip">Zip</label><Input  id="zip" maxlength="20" name="zip" size="20" type="text" />
+                <label htmlFor="zip">Zip</label><Input  id="zip" maxlength="20" name="zip" size="20" type="text" />
               </InputWrapper>
             </Section>
             <H5s>Primary Contact</H5s>
             <Section>
               <InputWrapper>
-                <label for="first_name">First Name</label><Input  id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+                <label htmlFor="first_name">First Name</label><Input  id="first_name" maxlength="40" name="first_name" size="20" type="text" />
               </InputWrapper>
               <InputWrapper>
-                <label for="last_name">Last Name</label><Input  id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+                <label htmlFor="last_name">Last Name</label><Input  id="last_name" maxlength="80" name="last_name" size="20" type="text" />
               </InputWrapper>
             </Section>
 
 
 
-            <label for="title">Title</label><Input  id="title" maxlength="40" name="title" size="20" type="text" />
+            <label htmlFor="title">Title</label><Input  id="title" maxlength="40" name="title" size="20" type="text" />
 
-            <label for="email">Email</label><Input  id="email" maxlength="80" name="email" size="20" type="text" />
+            <label htmlFor="email">Email</label><Input  id="email" maxlength="80" name="email" size="20" type="text" />
 
-            <label for="description">Description</label><Input name="description"></Input>
+            <label htmlFor="description">Description</label><Input name="description"></Input>
 
             Government Document:<Input  id="00Nf400000UIuGW" maxlength="155" name="00Nf400000UIuGW" size="20" type="text" />
 
-            <label for="revenue">Annual Revenue</label><Input  id="revenue" name="revenue" size="20" type="text" />
+            <label htmlFor="revenue">Annual Revenue</label><Input  id="revenue" name="revenue" size="20" type="text" />
             <H5s>Product Information</H5s>
             <Section>
 
@@ -215,7 +250,7 @@ export default ({data}) => {
 
             Source Comment:<Input  id="00Nf400000SmARU" name="00Nf400000SmARU" type="text" wrap="soft"></Input>
 
-            <Input type="submit" name="submit" />
+            <Submit type="submit" name="submit" class="site-link" />
 
             </Form>
         </RightRail>

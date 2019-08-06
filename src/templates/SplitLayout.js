@@ -161,6 +161,10 @@ const RightRail = styled.div`
     line-height: 1.5;
     font-style: italic;
   }
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   li {
     list-style-type: disc;
   }
@@ -170,7 +174,7 @@ const RightRail = styled.div`
     font-style: normal;
     font-stretch: normal;
     line-height: 28px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     color: #0d140d;
   }
   a {

@@ -69,9 +69,9 @@ const Form = styled.form`
 const Submit = styled.input `
   display: block;
   max-width: 560px;
-  width: 100%;
-  background: #000;
-  color: #fff;
+  width: 100% !important;
+  background: #000 !important;
+  color: #fff !important;
   -webkit-appearance: none;
   outline: none;
   border: none;
@@ -380,7 +380,7 @@ export default ({data}) => {
 
             
 
-            <Submit type="submit" name="submit" class="" />
+            <Submit type="submit" name="submit" class="site-link" />
 
             </Form>
         </RightRail>

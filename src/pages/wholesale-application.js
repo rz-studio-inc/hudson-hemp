@@ -66,7 +66,7 @@ const Form = styled.form`
   }
 
 `;
-const Submit = styled.input`
+const Submits = styled.input`
   display: block;
   max-width: 560px;
   width: 100% !important;
@@ -75,14 +75,16 @@ const Submit = styled.input`
   -webkit-appearance: none;
   outline: none;
   border: none;
-  border: solid 1px #0d140d;
+  border: 1px solid #0d140d;
   text-align: center;
   padding: 16px 0 16px 0;
   font-size: 21px;
   line-height: 1;
   min-width: 180px;
   margin-bottom: 12px;
-  
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+
   font-family: 'Times New Roman';
   cursor: pointer;
   margin-top: 20px;
@@ -380,7 +382,7 @@ export default ({data}) => {
 
             
 
-            <Submit type="submit" name="submit" class="site-link" />
+            <Submits type="submit" name="submit" />
 
             </Form>
         </RightRail>

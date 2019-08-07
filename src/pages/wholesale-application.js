@@ -66,7 +66,7 @@ const Form = styled.form`
   }
 
 `;
-const Submit = styled.input `
+const Submit = styled.input`
   display: block;
   max-width: 560px;
   width: 100% !important;

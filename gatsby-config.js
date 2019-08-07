@@ -24,7 +24,7 @@ module.exports = {
       resolve: "gatsby-plugin-mailchimp",
       options: {
         endpoint:
-          `https://hudsonhemp.us12.list-manage.com/subscribe/post?u=e17e243cd03dbba968172f897&amp;id=c2636ea063`// add your MC list endpoint here; see instructions below
+          `https://hudsonhemp.us12.list-manage.com/subscribe/post?u=e17e243cd03dbba968172f897&amp;id=1fa4b273c9`// add your MC list endpoint here; see instructions below
       }
     },
     {

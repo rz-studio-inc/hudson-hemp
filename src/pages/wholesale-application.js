@@ -380,7 +380,7 @@ export default ({data}) => {
 
             
 
-            <Submit type="submit" name="submit" class="site-link" />
+            <Submit type="submit" name="submit" class="" />
 
             </Form>
         </RightRail>

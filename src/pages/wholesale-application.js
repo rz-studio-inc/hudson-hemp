@@ -241,7 +241,7 @@ export default ({data}) => {
 
             <Input type="hidden" name="oid" value="00Df4000004jvuN" />
             <Input type="hidden" name="retURL" value="http://www.hudsonhemp.com/wholesale" />
-            <H5s>1.Company Information</H5s>
+            <H5s>1. Company Information</H5s>
             <Section>
 
               <label htmlFor="company">Company Name</label><Input  id="company" maxlength="40" name="company" size="20" type="text" />
@@ -295,7 +295,7 @@ export default ({data}) => {
               <Input id="revenue" name="revenue" size="20" type="text" />
               
             </Section>
-            <H5s>2.Primary Contact</H5s>
+            <H5s>2. Primary Contact</H5s>
             <Section>
               <InputWrapper>
                 <label htmlFor="first_name">First Name</label><Input id="first_name" maxlength="40" name="first_name" size="20" type="text" />
@@ -310,7 +310,7 @@ export default ({data}) => {
               <label htmlFor="phone">Phone</label><Input id="phone" maxlength="40" name="phone" size="20" type="text" />
             </Section>
 
-            <H5s>3.Shipping Information</H5s>
+            <H5s>3. Shipping Information</H5s>
             <Section className="row">
               <InputWrapper className="input-half">
                 <label htmlFor="street">Street</label><Input name="street"></Input>
@@ -326,7 +326,7 @@ export default ({data}) => {
               </InputWrapper>
             </Section>
        
-            <H5s>4.Product Information</H5s>
+            <H5s>4. Product Information</H5s>
             <Section>
 
               Which product are you interested in?:
@@ -360,7 +360,7 @@ export default ({data}) => {
 
 
             </Section>
-            <H5s>Compliance Information</H5s>
+            <H5s>5. Compliance Information</H5s>
             <Section>
               Do you work with a third party to verify your product?:
               <Dropdown  id="00Nf400000UIuGq" name="00Nf400000UIuGq" title="Does a third party verify your product?">

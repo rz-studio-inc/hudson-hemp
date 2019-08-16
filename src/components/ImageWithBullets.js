@@ -91,6 +91,9 @@ const Bullet = styled.li`
 `;
 
 const ImageWrapper = styled.div`
+  img {
+    display: block;
+  }
   ${media.tablet`
     padding-left: 30px;
   `}

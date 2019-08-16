@@ -68,6 +68,7 @@ const Row = styled.div`
   align-items: flex-end;
   padding: 20px;
   padding-top: 80px;
+  padding-bottom: 40px;
   flex-wrap: wrap;
   width: 100%;
   position: relative;

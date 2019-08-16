@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   padding: 20px;
   align-items: flex-end;
   flex-direction: column;
-  padding-top: 90px;
+  padding-top: 30px;
   ${media.tablet`
     flex-direction: row;
     padding: 40px;
@@ -42,9 +42,10 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   ${media.tablet`
     padding: 0 40px;
+    padding-bottom: 35px;
     flex: 1 0 50%;
   `}
 `;

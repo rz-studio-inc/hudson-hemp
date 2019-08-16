@@ -208,7 +208,7 @@ const Legal = styled.div`
 const FooterWrapper = styled.div`
   display: flex;
   background: ${props => props.theme.colors.beige};
-  padding-top: 80px;
+  padding-top: 90px;
   padding-bottom: 40px;
   flex-wrap: wrap;
   width: 100%;
@@ -217,6 +217,7 @@ const FooterWrapper = styled.div`
   ${media.tablet`
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 80px;
 
   `}
 `;

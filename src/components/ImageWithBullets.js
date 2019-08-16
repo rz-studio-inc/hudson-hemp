@@ -8,7 +8,7 @@ const Row = styled.div`
   flex-direction: column;
   align-items: flex-end;
   margin: 0 20px;
-  padding-top: 60px;
+  padding-top: 70px;
   ${media.tablet`
     /* padding-bottom: 40px; */
     /* border-bottom: 1px solid ${props => props.theme.colors.black}; */
@@ -24,7 +24,7 @@ const Content = styled.div`
   flex-direction: column;
   max-width: none;
   width: 100%;
-  padding-bottom: 24px;
+  padding-bottom: 10px;
   ${media.tablet`
     padding-bottom: 40px;
     max-width: 33.333%;
@@ -96,16 +96,17 @@ const ImageWrapper = styled.div`
   `}
 `;
 const Links = styled.a`
-  margin-top: 24px;
+  margin-top: 0px;
   max-width: none;
   width: 100%;
   display: none;
   ${media.tablet`
     display: block;
+    margin-top: 24px;
   `}
   &.mobile {
     display: block;
-    margin-bottom: 24px;
+    margin-bottom: 35px;
     ${media.tablet`
       display: none;
     `}

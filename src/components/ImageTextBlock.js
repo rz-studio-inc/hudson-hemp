@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   padding: 20px;
   align-items: flex-end;
   flex-direction: column;
+  padding-top: 90px;
   ${media.tablet`
     flex-direction: row;
     padding: 40px;

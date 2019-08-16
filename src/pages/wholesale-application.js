@@ -191,9 +191,14 @@ const Section = styled.div`
 
   }
   .input-half {
-    max-width: 50%;
-    flex: 1 0 50%;
     padding: 0 10px;
+    max-width: none;
+    width: 100%;
+    ${media.tablet` 
+      max-width: 50%;
+      flex: 1 0 50%;
+
+    `}
   }
 
 `;

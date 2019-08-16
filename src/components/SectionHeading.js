@@ -13,6 +13,7 @@ const Row = styled.div`
   margin: 0 auto;
   padding-top: 80px;
   padding: 0 20px;
+  padding-top: 20px;
 `;
 const Types = styled(Type)`
   padding-bottom: 40px;

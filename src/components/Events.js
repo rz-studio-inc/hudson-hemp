@@ -57,11 +57,11 @@ const Event = styled.div`
 const EventColumn = styled.div`
   max-width: none;
   width: 100%;
-  padding-right: 0;
-  padding-top: 20px;
+  padding-top: 40px;
   &:first-of-type {
-    padding-top: 20px;
+    padding-top: 40px;
     ${media.tablet`
+      padding-top: 20px;
     `}
   }
   ${media.tablet`

@@ -43,7 +43,11 @@ const Links = styled.a`
   margin-top: 24px;
 `;
 const Pic = styled.picture`
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  ${media.tablet`
+    margin-bottom: 20px;
+  `}
   img {
     display: block;
   }

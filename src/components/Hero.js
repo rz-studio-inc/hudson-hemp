@@ -174,6 +174,10 @@ const Links = styled.a`
   width: 100%;
   max-width: none;
   background: transparent;
+  margin-bottom: 20px;
+  ${media.tablet`
+    margin-bottom: 0;
+  `}
 
 `;
 const LinkWrapper = styled.div`

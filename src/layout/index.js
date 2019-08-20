@@ -79,6 +79,7 @@ const Layout = ({ children }) => (
           <Helmet>
             <link type="text/css" href="/public/MyFontsWebfontsKit.css" />
             <html lang="en" />
+            <title>Hudson Hemp — Sustainability is good. Regeneration is forever.</title>
           </Helmet>
           <Symbols />
           <ThemeProvider theme={theme}>

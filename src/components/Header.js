@@ -37,7 +37,7 @@ class Header extends Component {
     
     return (
       <Headroom>
-        <Nav className={`nav ${this.state.menuActive ? 'mobile' : ''} ${this.state.isDark ? 'white' : ''}`}>
+        <Nav className={`nav ${this.state.menuActive ? 'mobile' : ''} ${this.state.isDark == true ? 'white' : 'black'}`}>
           <Inner className="inner">
             <Link to="/" className={`logo-wrapper ${this.state.menuActive ? 'mobile-active' : ''}`}>
               <svg className="icon icon-logo">
@@ -193,6 +193,19 @@ const Nav = styled.nav`
   ${media.tablet`
     padding: 0;
   `};
+  &.black {
+    .inner {
+      ul {
+        li {
+          a {
+           &:after {
+             background: #0d0d0d;
+           } 
+          }
+        }
+      }
+    }
+  }
   &.white {
     .burger-menu {
       &.active {
@@ -326,7 +339,7 @@ const NavLink = styled.li`
       width: 100%;
       right: 0px;
       bottom: 0px;
-      background: #0d0d0d;
+      /* background: #0d0d0d; */
       height: 1px;
       opacity: 0;
       transition: opacity 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);

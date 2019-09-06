@@ -59,11 +59,11 @@ class Header extends Component {
 
                 ))}
               </NavLinks>
-              <a href="https://ourtreaty.com/" target="_blank" className={`shop-link`}> Shop
+              {/* <a href="https://ourtreaty.com/" target="_blank" className={`shop-link`}> Shop
                 <svg className="icon icon-arrow">
                   <use xlinkHref="#icon-arrow" />
                 </svg>
-              </a>
+              </a> */}
           
             <BurgerMenu
               onClick={this.menuHandler}
@@ -91,11 +91,11 @@ class Header extends Component {
               </NavLinkMobile>
 
             ))}
-            <a href="https://ourtreaty.com/" className={`shop-link mobile`}> Shop
+            {/* <a href="https://ourtreaty.com/" className={`shop-link mobile`}> Shop
                 <svg className="icon icon-arrow">
                 <use xlinkHref="#icon-arrow" />
               </svg>
-            </a>
+            </a> */}
             
           </NavLinksMobile>
         </NavMobile>

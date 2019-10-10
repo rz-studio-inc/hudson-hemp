@@ -87,7 +87,8 @@ class Footer extends Component {
           <Address>{data.address.text}</Address>
           <Contact>
             <div>{data.contact_email.text}</div>
-            <div>{data.contact_number.text}</div>
+            <div>© Hudson Hemp 2019</div>
+            {/* <div>{data.contact_number.text}</div> */}
           </Contact>
           <Social>
             <a href={data.linkedin_url.url} target={data.linkedin_url.target}>
@@ -104,8 +105,10 @@ class Footer extends Component {
             </a>
           </Social>
           <Legal>
+            <Link to="/careers/">Careers</Link>
+            <div>
             <Link to="/legal/">Legal</Link>
-            <div>© Hudson Hemp 2019</div>
+            </div>
           </Legal>
         </BottomRow>
       </FooterWrapper>

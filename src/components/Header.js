@@ -80,7 +80,7 @@ class Header extends Component {
             {menuLinks.links.map((link, idx) => (
 
               
-              <NavLinkMobile>
+              <NavLinkMobile key={`nav-link-mobile-${idx}`}>
                 <Link 
                 to={link.link_url.url}
                 activeClassName="active"

@@ -85,6 +85,10 @@ export const query = graphql`
                   heading_cta_url {url}
                   subheading {text}
                   description {text}
+                  image_icon { 
+                    url
+                    alt
+                  }
                   button_text{text}
                   button_url{
                     url

@@ -145,10 +145,10 @@ class ImageWithBullets extends Component {
         </Content>
         <Bullets>
           {bullets && bullets.map((bullet, idx) => (
-            <>
+            <React.Fragment key={`bullet-${idx}`}>
               <H6>{bullet.bullet_heading && bullet.bullet_heading.text}</H6>
               <Bullet key={idx}>{bullet.bullet_description.text}</Bullet>
-            </>
+            </React.Fragment>
           ))}
         </Bullets>
         {cta_url && cta && (

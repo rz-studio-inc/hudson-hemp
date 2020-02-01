@@ -52,9 +52,14 @@ const Pic = styled.picture`
     display: block;
   }
 `;
+const IconWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 const Icon = styled.img`
   max-width: 30px;
   margin-top: 20px;
+  margin-right: 10px;
 `
 class OneThirdColumn extends Component {
   constructor(props) {
@@ -89,7 +94,15 @@ class OneThirdColumn extends Component {
 
             <Italic>{item.subheading.text}</Italic>
             <Type>{item.description.text}</Type>
-            {item.image_icon.url && <Icon src={item.image_icon.url} alt={item.image_icon.alt}/> }
+            <IconWrapper>
+              {item.icon_images && item.icon_images.map((img,idx) => {
+                if(img.url) {
+                  return <Icon key={`icon-${idx}`} src={img.url} alt={img.alt ? img.alt : 'icon'} />
+                }
+              })}
+
+            </IconWrapper>
+            
             {item.button_text && item.button_url && (
               <Links href={item.button_url.url} className={"site-link"} target={item.button_url.target}>
                 {item.button_text.text}

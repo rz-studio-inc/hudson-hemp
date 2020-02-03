@@ -55,6 +55,7 @@ const Pic = styled.picture`
 const IconWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
 `;
 const Icon = styled.img`
   max-width: 30px;

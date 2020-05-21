@@ -105,7 +105,7 @@ const NewsletterModal = styled.div`
   max-width: calc(100% * (12/12));
   padding: 100px 40px;
   ${media.tablet`
-    max-width: calc(100% * (7/12));
+    max-width: calc(100% * (8/12));
     padding: 60px 40px;
 
   `}
@@ -186,10 +186,12 @@ const Form = styled.form`
   width: 100%;
   padding-right: 0;
   ${media.tablet`
-    max-width: 80%;
+    max-width: 77%;
     padding-right: 40px;
   `}
-  
+  h1 {
+    text-align: center;
+  }
   .error {
     display: block;
     flex: none;

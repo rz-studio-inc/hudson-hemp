@@ -1,11 +1,13 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import {StaticQuery} from 'gatsby';
+import { StaticQuery } from 'gatsby';
 import { graphql } from "gatsby";
 import GlobalStyle, { theme } from '../GlobalStyle';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Symbols from '../components/Symbols';
+import EmailPopup from '../components/EmailPopup';
+import { CookiesProvider } from 'react-cookie';
 import Helmet from 'react-helmet';
 const SiteRoot = styled.div``;
 const PageWrapper = styled.div`
@@ -84,9 +86,12 @@ const Layout = ({ children }) => (
           <Symbols />
           <ThemeProvider theme={theme}>
             <>
-              <Header menuLinks={data.allPrismicHeader.edges[0].node.data} />
-              <PageWrapper>{children}</PageWrapper>
-              <Footer data={data.allPrismicFooter.edges[0].node.data} />
+              <CookiesProvider>
+                <Header menuLinks={data.allPrismicHeader.edges[0].node.data} />
+                <PageWrapper>{children}</PageWrapper>
+                <Footer data={data.allPrismicFooter.edges[0].node.data} />
+                <EmailPopup data={data.allPrismicFooter.edges[0].node.data} />
+              </CookiesProvider>
             </>
           </ThemeProvider>
           <GlobalStyle />

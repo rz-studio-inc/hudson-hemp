@@ -24,6 +24,7 @@
     "prismic-dom": "^2.1.0",
     "prismic-reactjs": "^0.3.2",
     "react": "^16.8.6",
+    "react-cookie": "^4.0.3",
     "react-dom": "^16.8.6",
     "react-headroom": "^2.2.8",
     "react-helmet": "^5.2.1",
